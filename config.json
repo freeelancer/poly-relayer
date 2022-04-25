@@ -1,0 +1,54 @@
+{
+  "Env": "devnet",
+  "Bus": {
+    "Config": {
+      "Addr": "127.0.0.1:6379"
+    },
+    "HeightUpdateInterval": 1
+  },
+  "Poly": {
+    "Nodes": [
+      "http://3.1.204.111:8545"
+    ],
+    "Wallet": {
+      "Path": "./keystore/poly/wallet.dat",
+      "Password": "wallet password"
+    }
+  },
+  "Bridge": [
+    "https://bridge.poly.network/testnet/v1"
+  ],
+  "Port": 6501,
+  "ValidMethods": [
+    "add",
+    "remove",
+    "swap",
+    "unlock",
+    "addExtension",
+    "removeExtension",
+    "registerAsset",
+    "onCrossTransfer",
+    "depositCCIn"
+  ],
+  "Chains": {
+    "2": {
+      "Nodes": [
+        "https://ropsten.infura.io/v3/9bca539684b6408d9dbcbb179e593eab"
+      ],
+      "CheckFee": true,
+      "CCMContract": "0x93Ca2c73570D6065f0E5b3fE0E556B41C06EbF07",
+      "CCDContract": "0x36a87fA9AA530E684880f8a0Da5f40EaFABdE894",
+      "Wallet": {
+        "KeyStoreProviders": [
+          {
+            "Path": "./keystore/eth",
+            "Passwords": {
+              "0x2c3b54d366bf55d85b175be8975356af233ce912": "wallet password",
+              "0x25a84C56e9eE8100CD034c3465c0dE0B30e101A8": "wallet password"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

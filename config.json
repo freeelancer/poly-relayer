@@ -11,8 +11,10 @@
       "http://3.1.204.111:8545"
     ],
     "Wallet": {
-      "Path": "./keystore/poly/wallet.dat",
-      "Password": "wallet password"
+      "Path": "./keystore/eth",
+      "Passwords": {
+        "0x15fbab66a303a9B577Da1A201490617629038F11": "qweqweqwe"
+      }
     }
   },
   "Bridge": [
@@ -43,8 +45,7 @@
           {
             "Path": "./keystore/eth",
             "Passwords": {
-              "0x2c3b54d366bf55d85b175be8975356af233ce912": "wallet password",
-              "0x25a84C56e9eE8100CD034c3465c0dE0B30e101A8": "wallet password"
+              "0x15fbab66a303a9B577Da1A201490617629038F11": "qweqweqwe"
             }
           }
         ]
